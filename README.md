@@ -2,7 +2,7 @@
 My math teacher, Mr. Shah, once told me about this simple looking
 recursive sequence:<br>
 ## $$x_{n+1} = rx_n(1-x_n)$$
-I decided to do some investigating. My first instinct was to write a [program](https://github.com/johnbloch/ChaosExploration/tree/8b33b38b6123393fc7693c4660149e31d8952361/recursive_sequence_2023_07_05_18_16_54) to qualitatively
+I decided to do some investigating. My first instinct was to write a [program](https://github.com/johnbloch/ChaosExploration/tree/5e058bed8064289ef1d592d309c800f0757cf401/recursive_sequence_2023_07_05_18_16_54) to qualitatively
 visualize how this sequence evolves, depending on which values I pick for r and the sequence’s
 first term ($x_1$). As per Mr. Shah’s advice, I only looked at r values between 0 and 4, and first
 terms between 0 and 1. My program graphed the first 100 terms of the sequence.
@@ -17,7 +17,7 @@ value of r.
 
 ### r = 3.8 and $x_1 = 0.5$
 
-![unnamed (1)](https://github.com/johnbloch/ChaosExploration/assets/8367698/730cb76a-554e-4671-a00e-4000a26f5f3e)
+![unnamed (1)](https://.com/johnbloch/ChaosExploration/assets/8367698/730cb76a-554e-4671-a00e-4000a26f5f3e)
 
 When I first got a glimpse of this utter mayhem, I immediately thought that maybe something
 had gone wrong with my program... but I realized that my program was functioning just fine. It
@@ -53,7 +53,7 @@ of r this strange behavior emerges, I needed a new way to visualize the sequence
 ## A Different Type of Graph
 
 To get a better sense of how the sequence behaves in the long term for different r values, I wrote
-a [new program](https://github.com/johnbloch/ChaosExploration/tree/8b33b38b6123393fc7693c4660149e31d8952361/bifurcation1_2023_07_05_18_20_53) to generate a different type of graph. Instead of visualizing just one sequence
+a [new program](https://github.com/johnbloch/ChaosExploration/tree/5e058bed8064289ef1d592d309c800f0757cf401/bifurcation1_2023_07_05_18_20_53) to generate a different type of graph. Instead of visualizing just one sequence
 with one specific r value, this new graph would plot different r values (ranging from 0.2 to 3.8)
 on the x-axis. Also, instead of plotting the first 100 terms of the sequence, this new graph would
 plot the 10,000th term to the 10,100th term of the sequence on the y-axis for each r value. By
@@ -69,7 +69,7 @@ into two (meaning that the sequence bounces between two different values, rather
 one value). And for r = 3.6 and r = 3.8, the sequence does not settle down to any pattern.
 
 In order to see how exactly this graph goes from something simple (bouncing between two
-values) to something complicated, I created a more [refined graph](https://github.com/johnbloch/ChaosExploration/tree/8b33b38b6123393fc7693c4660149e31d8952361/refined_graph_2023_07_05_18_22_40) which plotted the r -values in increments of 0.0001.
+values) to something complicated, I created a more [refined graph](https://github.com/johnbloch/ChaosExploration/tree/5e058bed8064289ef1d592d309c800f0757cf401/refined_graph_2023_07_05_18_22_40) which plotted the r -values in increments of 0.0001.
 
 ![unnamed (4)](https://github.com/johnbloch/ChaosExploration/assets/8367698/759e2b2e-7342-41ff-b9f4-15b8ff2087db)
 
@@ -82,7 +82,7 @@ between 2 numbers, to 4 numbers, to 8, to 16, and so on. These “forks'' in the
 
 In 1975, physicist Mitchell Feigenbaum made an important discovery about these r -values. He  noticed that they occur in a certain ratio.  
 
-[Visualization of the r -values at which the logistic map bifurcates](https://github.com/johnbloch/ChaosExploration/tree/8b33b38b6123393fc7693c4660149e31d8952361/points_of_bifurcation_2023_07_05_18_23_49)
+[Visualization of the r -values at which the logistic map bifurcates](https://github.com/johnbloch/ChaosExploration/tree/5e058bed8064289ef1d592d309c800f0757cf401/points_of_bifurcation_2023_07_05_18_23_49)
 <ul>
   <li>The vertical green lines highlight where the graph bifurcates</li>
   <li>The horizontal lines represent the different regions of the graph (period 2, period 4, etc.) </li>
@@ -118,7 +118,7 @@ For example, consider this recursive sequence: $x_{n+1} = rsin(\pi x_n)$
 If we perform the same calculations with its bifurcation points, we also get a ratio near
 Feigenbaum’s Constant.
 
-[Bifurcation diagram of a different recursive sequence $x_{n+1} = rsin(\pi x_n)$](https://github.com/johnbloch/ChaosExploration/tree/8b33b38b6123393fc7693c4660149e31d8952361/points_of_bifurcation_2.0_2023_07_05_18_24_40)
+[Bifurcation diagram of a different recursive sequence $x_{n+1} = rsin(\pi x_n)$](https://github.com/johnbloch/ChaosExploration/tree/5e058bed8064289ef1d592d309c800f0757cf401/points_of_bifurcation_2.0_2023_07_05_18_24_40)
 
 ![unnamed (7)](https://github.com/johnbloch/ChaosExploration/assets/8367698/f8ea92f7-3b20-4d89-bbd3-e401cda6bc61)
 
@@ -173,7 +173,7 @@ If we graph this on Desmos, we see that it looks like the beginning of our logis
 This is because it is ! For any r -value between 1 and 3 that we plug into that equation, the
 equation will output the value of the one term that the sequence settles to.
 For example, if we plug in r = 2.5 to the function, we get x = 0.6. If we run the sequence for r =
-2.5 on my [program](https://github.com/johnbloch/ChaosExploration/tree/8b33b38b6123393fc7693c4660149e31d8952361/recursive_sequence_2023_07_05_18_16_54) , we can see in the console that the sequence does in fact settle down to 0.6.
+2.5 on my [program](https://github.com/johnbloch/ChaosExploration/tree/5e058bed8064289ef1d592d309c800f0757cf401/recursive_sequence_2023_07_05_18_16_54) , we can see in the console that the sequence does in fact settle down to 0.6.
 
 We can also algebraically see the period 2 cycle with the same method!
 Previously, we said that $f(x) = x$, because we know that the sequence settles down to 1 number
