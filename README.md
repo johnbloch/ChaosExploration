@@ -9,14 +9,13 @@ terms between 0 and 1. My program graphed the first 100 terms of the sequence.
 The results were interesting.
 
 ### r = 0.5 and $x_1 = 0.5$
-![unnamed](https://github.com/johnbloch/ChaosExploration/assets/8367698/c3c4f195-17f7-4bb3-95e1-eed6309ef8b6)
+<img width="614" alt="Screen Shot 2024-11-02 at 5 15 33 PM" src="https://github.com/user-attachments/assets/7ee871d7-e6f8-4e90-a77c-ef91cc83e7de">
 
 This was what I had expected. However, something very strange happened when I increased the
 value of r.
 
 ### r = 3.8 and $x_1 = 0.5$
-
-![unnamed (1)](https://.com/johnbloch/ChaosExploration/assets/8367698/730cb76a-554e-4671-a00e-4000a26f5f3e)
+<img width="607" alt="Screen Shot 2024-11-02 at 5 16 17 PM" src="https://github.com/user-attachments/assets/e2c16bbe-dcbd-4205-af20-6884a43ed95c">
 
 When I first got a glimpse of this utter mayhem, I immediately thought that maybe something
 had gone wrong with my program... but I realized that my program was functioning just fine. It
@@ -30,8 +29,8 @@ At this point, my biggest question was this:
 In order to get some insight into how changing the initial conditions of the equation might affect
 the sequence’s behavior, I created a chart with sketches of the sequence for different values of r
 and x 1
+<img width="602" alt="Screen Shot 2024-11-02 at 5 16 56 PM" src="https://github.com/user-attachments/assets/65d36948-3f1e-4b3d-bf5a-004a4fcd4268">
 
-![unnamed (2)](https://github.com/johnbloch/ChaosExploration/assets/8367698/73e45fdb-3e49-4c60-8787-0e52db864429)
 (r is plotted horizontally and $x_1$ is plotted vertically)
 
 There were two important things I took away from this chart:
@@ -60,7 +59,7 @@ plotting a bunch of terms that are deep into the sequence, I would get some insi
 sequence behaves in the long term (i.e. Does it settle on a certain number? Does it bounce
 between two numbers? Does it do something else?) depending on r .
 
-![unnamed (3)](https://github.com/johnbloch/ChaosExploration/assets/8367698/17ebaddf-10ea-4bf6-8c6f-dbe9e8bb5281)
+<img width="626" alt="Screen Shot 2024-11-02 at 5 17 18 PM" src="https://github.com/user-attachments/assets/d56cdae8-c823-4299-b047-e04172eac3d2">
 
 Already, I could see the parallels between this and my previous hand-drawn graph: the sequence
 settles to one value for low r -values, but at around r = 3, the long term behavior begins to branch
@@ -70,11 +69,11 @@ one value). And for r = 3.6 and r = 3.8, the sequence does not settle down to an
 In order to see how exactly this graph goes from something simple (bouncing between two
 values) to something complicated, I created a more [refined graph](https://github.com/johnbloch/ChaosExploration/tree/5e058bed8064289ef1d592d309c800f0757cf401/refined_graph_2023_07_05_18_22_40) which plotted the r -values in increments of 0.0001.
 
-![unnamed (4)](https://github.com/johnbloch/ChaosExploration/assets/8367698/759e2b2e-7342-41ff-b9f4-15b8ff2087db)
+<img width="626" alt="Screen Shot 2024-11-02 at 5 17 34 PM" src="https://github.com/user-attachments/assets/1b12def6-176c-43d5-909e-21054279a67b">
 
 Here’s the same graph, but we’ve zoomed in to just r -values between 3.4 and 3.6
 
-![unnamed (5)](https://github.com/johnbloch/ChaosExploration/assets/8367698/14a93213-5b69-441d-916b-373210da1281)
+<img width="617" alt="Screen Shot 2024-11-02 at 5 17 49 PM" src="https://github.com/user-attachments/assets/75fc9d11-4c2c-4f54-a93a-f290ac80148f">
 
 With this graph (which is known as the logistic map), we can see how we go from simply  bouncing between two numbers ( r = 3.4) to chaos ( r = 3.6). The sequence goes from bouncing 
 between 2 numbers, to 4 numbers, to 8, to 16, and so on. These “forks'' in the graph are known as  bifurcations. When the long term sequence bounces between 2 numbers, this is known as a  “period 2 cycle,” and when it’s bouncing between 4 numbers, it’s a “period 4 cycle,” and so on.  Moreover, the r -values at which the graph bifurcates seem closer with each subsequent  bifurcation -- the first bifurcation is at around r = 3.45, the next one is near r = 3.54, then r =  3.56, and so on. I later learned that since these bifurcation points gradually get closer and closer  together, starting at approximately r = 3.57, the logistic map “stops” bifurcating (although it  actually bifurcates forever…). The area of the graph after this r -value is known as the chaotic  region.    
@@ -87,7 +86,7 @@ In 1975, physicist Mitchell Feigenbaum made an important discovery about these r
   <li>The horizontal lines represent the different regions of the graph (period 2, period 4, etc.) </li>
 </ul>
 
-![unnamed (6)](https://github.com/johnbloch/ChaosExploration/assets/8367698/cc948a15-92b1-4f26-a9f8-9a1a52f00021)
+<img width="612" alt="Screen Shot 2024-11-02 at 5 18 10 PM" src="https://github.com/user-attachments/assets/2c837753-72d8-4e0a-b2ae-1846db5de5ca">
 
 Feigenbaum noted that the ratio between the length of the period 2 region and the length of the
 period 4 region was similar to that of the length of the period 4 region and the length of the
@@ -119,7 +118,7 @@ Feigenbaum’s Constant.
 
 [Bifurcation diagram of a different recursive sequence $x_{n+1} = rsin(\pi x_n)$](https://github.com/johnbloch/ChaosExploration/tree/5e058bed8064289ef1d592d309c800f0757cf401/points_of_bifurcation_2.0_2023_07_05_18_24_40)
 
-![unnamed (7)](https://github.com/johnbloch/ChaosExploration/assets/8367698/f8ea92f7-3b20-4d89-bbd3-e401cda6bc61)
+<img width="639" alt="Screen Shot 2024-11-02 at 5 18 46 PM" src="https://github.com/user-attachments/assets/2c60eae0-00cb-4d30-a803-418528b0cdb6">
 
 <em>
 Note how even in the midst of all the chaotic behavior we see regions of stability!
@@ -138,7 +137,7 @@ algebraically.
 
 First consider just the first, simplest, portion of the logistic map (1 < r < 3):
 
-![unnamed (8)](https://github.com/johnbloch/ChaosExploration/assets/8367698/6627e9bd-4300-4748-be75-176826aca9af)
+<img width="631" alt="Screen Shot 2024-11-02 at 5 19 03 PM" src="https://github.com/user-attachments/assets/577b820d-3667-493d-b13b-efaebc591f1f">
 
 In order to understand algebraically why this part of the logistic map looks the way it does, we
 must first express the recursive sequence as a function.
@@ -167,7 +166,7 @@ If we solve for x:
 
 If we graph this on Desmos, we see that it looks like the beginning of our logistic map!
 
-![unnamed (9)](https://github.com/johnbloch/ChaosExploration/assets/8367698/2ac6805f-4f0b-43c2-aa7b-dcea64c0c50b)
+<img width="542" alt="Screen Shot 2024-11-02 at 5 19 24 PM" src="https://github.com/user-attachments/assets/7d713360-6ff4-4fa6-bf28-cc588464a644">
 
 This is because it is ! For any r -value between 1 and 3 that we plug into that equation, the
 equation will output the value of the one term that the sequence settles to.
@@ -191,7 +190,7 @@ $x = r(rx(1-x))(1-(rx(1-x)))$
 
 If we graph that equation on Desmos, it gives us the period 2 region of the logistic map!
 
-![unnamed (10)](https://github.com/johnbloch/ChaosExploration/assets/8367698/80d3da42-7dd5-4970-9193-04458b2ad8b5)
+<img width="360" alt="Screen Shot 2024-11-02 at 5 19 43 PM" src="https://github.com/user-attachments/assets/026e8e1f-08fb-4cfa-8e8c-03ab4dec3374">
 
 We can also see that, as seen in the logistic map, the first bifurcation happens at r = 3.
 
